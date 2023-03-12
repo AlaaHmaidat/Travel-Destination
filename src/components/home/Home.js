@@ -1,9 +1,14 @@
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
 import Tours from "../tours/Tours";
+import './Home.css'
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
-const db = require('../../data/db.json');
+
+
 function Home() {
+    const navigate = useNavigate();  
     return (
         <>
             <Header>
@@ -12,9 +17,11 @@ function Home() {
 
             </Header>
 
-            <main>
-            
-                    <Tours arrData={db} />
+            <main className="main">
+
+                <Link to="/" onClick={()=>navigate(`/Home`)}>Home</Link>
+
+                <Tours />
 
             </main>
 
