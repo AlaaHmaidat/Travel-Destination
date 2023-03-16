@@ -1,10 +1,13 @@
 import SocialFollow from "../SocialFollow"
-
+import '../reset.css'
+import './Footer.css'
 function Footer() {
     return (
-        <>
-           <SocialFollow />
-        </>
+      
+        <div className="footer">
+        <SocialFollow />
+        </div>
+        
     );
 }
 

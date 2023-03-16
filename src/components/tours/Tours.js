@@ -1,13 +1,12 @@
-function Tours(props) {
+import Tour from "./tour/Tour";
+const db = require('../../data/db.json');
+
+function Tours() {
     return (
         <>
-            {props.arrData.map((item) => {
+            {db.map((dataOfDB) => {
                 return (
-                    <div key={item.ID}>
-                        <h3>{item.name}</h3>
-                        <img src={item.image} alt={item.name}></img>
-                        <hr/>   
-                    </div>
+                    <Tour key={dataOfDB.id} data={dataOfDB} />
                 )
             })}
         </>

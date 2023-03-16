@@ -1,8 +1,10 @@
+import '../reset.css'
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
 import Tours from "../tours/Tours";
+import '../reset.css'
+import './Home.css';
 
-const db = require('../../data/db.json');
 function Home() {
     return (
         <>
@@ -12,10 +14,8 @@ function Home() {
 
             </Header>
 
-            <main>
-            
-                    <Tours arrData={db} />
-
+            <main className="main">
+                <Tours />
             </main>
 
             <footer>
