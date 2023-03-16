@@ -1,0 +1,20 @@
+* {
+    font-style: normal;
+}
+
+:root {
+    --background: #ffffffee;
+    --headerFooter: #6ec2db;
+    /* --paragraph: #8EC3B0; */
+    --button-bg: #db6e6e;
+    --button-text: #ffffffee;
+}
+.header {
+    background-color: var(--headerFooter);
+    display: flex;
+    justify-content: space-between;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: fixed;
+    width: 100%;
+}
